@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Rotating Cube</title>
+  <style>
+    #container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: rgb(0, 0, 0);
+      perspective: 10000px;
+    }
+
+    #cube {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: none;
+    transform: rotateX(0deg) rotateY(0deg);
+    transition: transform 0.1s;
+    cursor: pointer; 
+    
+  }
+
+    #front {
+      width: 400px;
+      height: 400px;
+      position: absolute;
+      background-color: rgba(255, 0, 0, 0.5);
+      transform: translateZ(200px);
+      box-shadow: 0px 0px 80px 20px rgba(255, 0, 0, 0.5);
+    }
+
+    #back {
+      width: 400px;
+      height: 400px;
+      position: absolute;
+      background-color: rgba(0, 255, 0, 0.5);
+      transform: rotateY(180deg) translateZ(200px);
+      box-shadow: 0px 0px 80px 20px rgba(0, 255, 0, 0.5);
+    }
+
+    #right {
+      width: 400px;
+      height: 400px;
+      position: absolute;
+      background-color: rgba(255, 255, 0, 0.5);
+      transform: rotateY(90deg) translateZ(200px);
+      box-shadow: 0px 0px 80px 20px rgba(255, 255, 0, 0.5);
+    }
+
+    #left {
+      width: 400px;
+      height: 400px;
+      position: absolute;
+      background-color: rgba(0, 0, 255, 0.5);
+      transform: rotateY(-90deg) translateZ(200px);
+      box-shadow: 0px 0px 80px 20px rgba(0, 0, 255, 0.5);
+    }
+
+    #top {
+      width: 400px;
+      height: 400px;
+      position: absolute;
+      background-color: rgba(255, 0, 255, 0.5);
+      transform: rotateX(90deg) translateZ(200px);
+      box-shadow: 0px 0px 80px 20px rgba(255, 0, 255, 0.5);
+    }
+
+    #bottom {
+      width: 400px;
+      height: 400px;
+      position: absolute;
+      background-color: rgba(0, 255, 255, 0.5);
+      transform: rotateX(-90deg) translateZ(200px);
+      box-shadow: 0px 0px 80px 20px rgba(0, 255, 255, 0.5);
+    }
+
+    #text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #code-block {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #222;
+      padding: 20px;
+      box-sizing: border-box;
+      display: none;
+  
+    }
+
+    #code-block code {
+      color: #ffffff;
+      font-size: 14px;
+      font-family: 'Courier New', Courier, monospace;
+      box-shadow: 0px 0px 20px 5px rgba(255, 0, 255, 0.5);
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="cube">
+      <div id="front"></div>
+      <div id="back"></div>
+      <div id="right"></div>
+      <div id="left"></div>
+      <div id="top"></div>
+      <div id="bottom"></div> 
+      <div id="text">
+        <h1>Hello World!</h1>
+      </div>
+  </div>
+  
+  <div id="code-block">
+    <pre>
+      <code>
+        look mum no computer
+      </code>
+    </pre>
+  </div>
+
+
+
+  <script>
+
+const cube = document.getElementById('cube');
+const container = document.getElementById('container');
+const codeBlock = document.getElementById('code-block');
+let codeBlockVisible = false;
+
+container.addEventListener('mousemove', rotateCube);
+cube.addEventListener('click', toggleCodeBlock);
+
+function rotateCube(event) {
+  const containerWidth = container.offsetWidth;
+  const containerHeight = container.offsetHeight;
+  const rotateX = (event.clientY / containerHeight * 360) - 180;
+  const rotateY = (event.clientX / containerWidth * 360) - 180;
+  cube.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+}
+
+function toggleCodeBlock() {
+  if (codeBlockVisible) {
+    codeBlock.style.display = 'none';
+  } else {
+    codeBlock.style.display = 'block';
+  }
+  codeBlockVisible = !codeBlockVisible;
+}
+
+  </script>
+</body>
+
+</html>
