@@ -4,95 +4,7 @@
 <head>
 
   <title>Rotating Cube</title>
-  <style>
-    #container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      perspective: 10000px;
-    }
 
-    #cube {
-    width: 300px;
-    height: 300px;
-    position: relative;
-    transform-style: preserve-3d;
-    animation: none;
-    transform: rotateX(0deg) rotateY(0deg);
-    transition: transform 0.1s;
-    cursor: pointer; 
-  }
-
-    #front {
-      width: 300px;
-      height: 300px;
-      position: absolute;
-      background-color: rgba(255, 0, 0, 0.5);
-      transform: translateZ(150px);
-      
-    }
-
-    #back {
-      width: 300px;
-      height: 300px;
-      position: absolute;
-      background-color: rgba(0, 255, 0, 0.5);
-      transform: rotateY(180deg) translateZ(150px);
-      
-    }
-
-    #right {
-      width: 300px;
-      height: 300px;
-      position: absolute;
-      background-color: rgba(255, 255, 0, 0.5);
-      transform: rotateY(90deg) translateZ(150px);
-      
-    }
-
-    #left {
-      width: 300px;
-      height: 300px;
-      position: absolute;
-      background-color: rgba(0, 0, 255, 0.5);
-      transform: rotateY(-90deg) translateZ(150px);
-      
-    }
-
-    #top {
-      width: 300px;
-      height: 300px;
-      position: absolute;
-      background-color: rgba(255, 0, 255, 0.5);
-      transform: rotateX(90deg) translateZ(150px);
-      
-    }
-
-    #bottom {
-      width: 300px;
-      height: 300px;
-      position: absolute;
-      background-color: rgba(0, 255, 255, 0.5);
-      transform: rotateX(-90deg) translateZ(150px);
-      
-    }
-
-    #text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-
-  </style>
 </head>
 
 <body>
@@ -110,6 +22,96 @@
   </div>
 </body>
 
+<style>
+  #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    perspective: 10000px;
+  }
+
+  #cube {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: none;
+  transform: rotateX(0deg) rotateY(0deg);
+  transition: transform 0.1s;
+  cursor: pointer; 
+}
+
+  #front {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.5);
+    transform: translateZ(150px);
+    
+  }
+
+  #back {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background-color: rgba(0, 255, 0, 0.5);
+    transform: rotateY(180deg) translateZ(150px);
+    
+  }
+
+  #right {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background-color: rgba(255, 255, 0, 0.5);
+    transform: rotateY(90deg) translateZ(150px);
+    
+  }
+
+  #left {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background-color: rgba(0, 0, 255, 0.5);
+    transform: rotateY(-90deg) translateZ(150px);
+    
+  }
+
+  #top {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background-color: rgba(255, 0, 255, 0.5);
+    transform: rotateX(90deg) translateZ(150px);
+    
+  }
+
+  #bottom {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background-color: rgba(0, 255, 255, 0.5);
+    transform: rotateX(-90deg) translateZ(150px);
+    
+  }
+
+  #text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+</style>
+
 <script>
 
 const cube = document.getElementById('cube');
@@ -124,47 +126,12 @@ oscillator.type = 'square';
 oscillator.frequency.setValueAtTime(88, audioCtx.currentTime); // set the frequency to 440 Hz
 oscillator.connect(audioCtx.destination);
 
+// listeners
 container.addEventListener('mousemove', rotateCube);
 container.addEventListener('touchmove', rotateCube);
 container.addEventListener('touchstart', () => isTouchDown = true);
 container.addEventListener('touchend', () => isTouchDown = false);
 container.addEventListener('mouseleave', () => isTouchDown = false);
-
-cube.addEventListener('pointerdown', () => {
-  perspective = 300;
-  const audioCtx = new AudioContext();
-  const oscillator = audioCtx.createOscillator();
-  const filter = audioCtx.createBiquadFilter();
-  const lfo1 = audioCtx.createOscillator(); // create first LFO oscillator
-  const lfo1Gain = audioCtx.createGain(); // create first gain node to control first LFO intensity
-  const lfo2 = audioCtx.createOscillator(); // create second LFO oscillator
-  const lfo2Gain = audioCtx.createGain(); // create second gain node to control second LFO intensity
-  oscillator.type = 'square';
-  oscillator.frequency.setValueAtTime(80, audioCtx.currentTime);
-  filter.type = 'lowpass';
-  filter.frequency.setValueAtTime(300, audioCtx.currentTime);
-  lfo1.type = 'sine'; // set first LFO type to sine
-  lfo1.frequency.setValueAtTime(0.2, audioCtx.currentTime); // set first LFO frequency to 8 Hz
-  lfo1Gain.gain.setValueAtTime(100, audioCtx.currentTime); // set first LFO intensity to 100 Hz
-  lfo2.type = 'sine'; // set second LFO type to sine
-  lfo2.frequency.setValueAtTime(0.1, audioCtx.currentTime); // set second LFO frequency to 2 Hz
-  lfo2Gain.gain.setValueAtTime(5, audioCtx.currentTime); // set second LFO intensity to 20 Hz
-  lfo1.connect(lfo1Gain);
-  lfo1Gain.connect(filter.frequency); // connect LFO1 to filter freq
-  lfo2.connect(lfo2Gain);
-  lfo2Gain.connect(lfo1.frequency); // connect LFO2 to first LFO1 freq
-  oscillator.connect(filter);
-  filter.connect(audioCtx.destination);
-  oscillator.start();
-  lfo1.start(); // start LFO1
-  lfo2.start(); // start LFO2
-  cube.addEventListener('mouseup', () => {
-    perspective = 1000;
-    oscillator.stop();
-    lfo1.stop(); // stop LFO1
-    lfo2.stop(); // stop LFO2
-  }, { once: true });
-});
 
 cube.addEventListener('mousedown', () => {
   const front = document.getElementById('front');
@@ -234,6 +201,41 @@ cube.addEventListener('touchend', () => {
   bottom.style.boxShadow = '0px 0px 0px 0px rgba(0, 255, 255, 0.5)';
 });
 
+cube.addEventListener('pointerdown', () => {
+  perspective = 300;
+  const audioCtx = new AudioContext();
+  const oscillator = audioCtx.createOscillator();
+  const filter = audioCtx.createBiquadFilter();
+  const lfo1 = audioCtx.createOscillator(); // create first LFO oscillator
+  const lfo1Gain = audioCtx.createGain(); // create first gain node to control first LFO intensity
+  const lfo2 = audioCtx.createOscillator(); // create second LFO oscillator
+  const lfo2Gain = audioCtx.createGain(); // create second gain node to control second LFO intensity
+  oscillator.type = 'square';
+  oscillator.frequency.setValueAtTime(80, audioCtx.currentTime);
+  filter.type = 'lowpass';
+  filter.frequency.setValueAtTime(300, audioCtx.currentTime);
+  lfo1.type = 'sine'; // set first LFO type to sine
+  lfo1.frequency.setValueAtTime(0.2, audioCtx.currentTime); // set first LFO frequency to 8 Hz
+  lfo1Gain.gain.setValueAtTime(100, audioCtx.currentTime); // set first LFO intensity to 100 Hz
+  lfo2.type = 'sine'; // set second LFO type to sine
+  lfo2.frequency.setValueAtTime(0.1, audioCtx.currentTime); // set second LFO frequency to 2 Hz
+  lfo2Gain.gain.setValueAtTime(5, audioCtx.currentTime); // set second LFO intensity to 20 Hz
+  lfo1.connect(lfo1Gain);
+  lfo1Gain.connect(filter.frequency); // connect LFO1 to filter freq
+  lfo2.connect(lfo2Gain);
+  lfo2Gain.connect(lfo1.frequency); // connect LFO2 to first LFO1 freq
+  oscillator.connect(filter);
+  filter.connect(audioCtx.destination);
+  oscillator.start();
+  lfo1.start(); // start LFO1
+  lfo2.start(); // start LFO2
+  cube.addEventListener('mouseup', () => {
+    perspective = 1000;
+    oscillator.stop();
+    lfo1.stop(); // stop LFO1
+    lfo2.stop(); // stop LFO2
+  }, { once: true });
+});
 
 function rotateCube(event) {
   const containerWidth = container.offsetWidth;

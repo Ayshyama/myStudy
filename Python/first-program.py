@@ -47,17 +47,14 @@
 
 # print('   I am a teacher at DCI. I love to learn new things.    '.strip().replace('teacher', 'student'))
 
-
-
-
 # message = "Build a strong foundation for your future at the Digital Career Institute"
 # print(message.count("d"), '\n', message.count("a"), '\n', message.replace("future", "bright future"))
 
-# name = input('Enter your name: ')
-# age = input('Enter your age: ')
-# city = input('Enter your city: ')
-# print(f'Hi, I am {name}, I am {age} years old. I live in {city}')
-# print(f'Hi, I am' + "" + name + ", " + 'I am' + " " + age + " " + 'years old. I live in' + " " + city + ".")
+name = input('Enter your name: ')
+age = input('Enter your age: ')
+city = input('Enter your city: ')
+print(f'Hi, I am {name}, I am {age} years old. I live in {city}')
+
 
 # first_name = input('Please enter your first name:') # Elton
 # last_name = input('Please enter your last name:') # Webber
@@ -82,8 +79,8 @@
 # z =  x + y
 # print(z)
 
-message = 'I live in Berlin.   '
-print(message.strip())
+# message = 'I live in Berlin.   '
+# print(message.strip())
 
 
 
