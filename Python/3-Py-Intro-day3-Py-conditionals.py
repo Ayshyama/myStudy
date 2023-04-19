@@ -25,6 +25,7 @@ else:
     print("Nope. Just for kidz!")
 '''
 
+'''
 import random
 
 lucky = random.randint(0, 5)
@@ -45,5 +46,7 @@ else:
             print("You lose big")
         else:
             print("You lose a bit")
+'''
+
 
 
