@@ -1,6 +1,6 @@
 ### Teacher Joel Peltonen
 ### 18.04.2023
-### Intro
+### Py Intro day 2
 '''
 1. How to install Python on Linux:
  sudo apt-get install python
