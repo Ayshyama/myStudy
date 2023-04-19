@@ -2,7 +2,7 @@
 ### 19.04.2023
 ### Py Intro day 3
 
-'''
+
 # check the name
 my_name = input("What's your name?: ")
 my_age = int(input("How old are you?: "))      ## cast the result of input to an integer
@@ -23,9 +23,9 @@ if (my_age <= 17):
         print("Bye!")
 else:
     print("Nope. Just for kidz!")
-'''
 
-'''
+
+
 import random
 
 lucky = random.randint(0, 5)
@@ -46,7 +46,7 @@ else:
             print("You lose big")
         else:
             print("You lose a bit")
-'''
+
 
 
 
