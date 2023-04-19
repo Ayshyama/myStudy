@@ -1,5 +1,5 @@
 #Task1
-"""
+
 num1 = 5
 num2 = 10
 
@@ -10,11 +10,10 @@ sum += num2
 
 print("The sum is", sum)
 
-"""
+
 
 
 #Task2
-"""
 
 num1 = 2
 num2 = 3
@@ -29,11 +28,11 @@ product *= num4
 
 print("The product is:", product)
 
-"""
+
 
 
 #Task3
-"""
+
 char1 = "H"
 char2 = "e"
 char3 = "l"
@@ -60,11 +59,11 @@ reverse += char2
 reverse += char1
 
 print("The resulting string is:", reverse)
-"""
+
 
 
 #Task4
-# """
+
 str1 = "apple"
 str2 = "banana"
 str3 = "cherry"
@@ -76,7 +75,7 @@ concatenated += str3
 
 print("The concatenated string is:", concatenated)
 
-# """
+
 
 
 
@@ -85,7 +84,7 @@ print("The concatenated string is:", concatenated)
 
 ### Task 1 - basic math operations
 
-"""
+
 # Operation: addition (+)
 ######## Integers
 a = 5
@@ -150,13 +149,13 @@ a = 5
 b = 0
 # print(a / b)
 
-"""
+
 
 
 
 ### Task 2 - basic math functions
 
-"""
+
 
 # abs() - returns the absolute value of a number
 print(abs(-23)) # 23
@@ -193,5 +192,3 @@ print(bool(-1))  # True
 print(bool(3.14))  # True
 print(bool(""))  # False
 print(bool("hello"))  # True
-
-"""
