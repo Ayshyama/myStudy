@@ -1,7 +1,7 @@
 import random
 
 ### TASK 1
-'''
+
 number = random.randint(1, 100000)
 guess = 0
 guess_counter = 0
@@ -19,7 +19,7 @@ while guess != number:
     else:
         print('Cool! You guessed the number! Your total number of attempts is: ', guess_counter)
 
-'''
+
 
 ### TASK 2
 
