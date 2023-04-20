@@ -1,14 +1,14 @@
 import random
 
-def generate_stats():
+def generate_stats_value():
     return random.randint(3, 15)
 
 def generate_character(name):
     character_class = random.choice(['Barbarian', 'Cleric', 'Druid'])
-    health = generate_stats()
-    strength = generate_stats()
-    magic = generate_stats()
-    initiative = generate_stats()
+    health = generate_stats_value()
+    strength = generate_stats_value()
+    magic = generate_stats_value()
+    initiative = generate_stats_value()
 
     if character_class == 'Barbarian':
         health *= 3
@@ -23,15 +23,16 @@ def generate_character(name):
 
     return f'{name} is a {character_class}!\nStrength: {strength}\nMagic: {magic}\nHealth: {health}\nInitiative: {initiative}\n'
 
-print("Welcome to the character generator!")
+print("\nWelcome to the character generator!\n")
 num_characters = int(input("How many characters are we creating: "))
-
+print("\nLet's name the brave adventurers:\n")
+      
 names = []
 for i in range(num_characters):
     name = input(f"Character {i+1}: ")
     names.append(name)
 
-print("\n***YOUR CHARACTERS ARE COMPLETE***")
+print("\n******YOUR CHARACTERS ARE COMPLETE******")
 for name in names:
     print(generate_character(name))
 
