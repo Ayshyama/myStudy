@@ -9,7 +9,7 @@
 # my_strings = ['blaaa', 'bla', 'blaa'] --> ['bla', 'blaa', 'blaaa']
 print('#### TASK 1 ####')
 
-# input
+# func
 def count_vowels(string):
     vowels = "aeiouAEIOU"
     count = 0
@@ -18,6 +18,7 @@ def count_vowels(string):
             count += 1
     return count
 
+# input
 my_strings = input("Write some strings to the list, separate it by a comma: ").split(',')
 
 # sorting
