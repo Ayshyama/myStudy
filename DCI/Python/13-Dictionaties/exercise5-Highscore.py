@@ -11,10 +11,7 @@ scores = {
 
 
 def get_score(name):
-    # Convert name to lowercase
     lowercase_name = name.lower()
-
-    # Check if name is in scores dictionary
     if lowercase_name not in scores:
         print(f"{name} did not participate")
     else:

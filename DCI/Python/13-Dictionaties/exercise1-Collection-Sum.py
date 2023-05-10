@@ -16,8 +16,9 @@ dict2 = {
 ## Output: 73
 
 total = 0
-
 for key in dict1:
     total += dict1[key] * dict2[key]
 
 print(total)
+
+print(sum(dict1[key] * dict2[key] for key in dict1))
