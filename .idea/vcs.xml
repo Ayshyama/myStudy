@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DCI/Python/10-Collection/collection-1-python-collections-basics-1-Ayshyama" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DCI/Python/10-Collection/collection-2-python-collections-swap-Ayshyama" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DCI/Python/10-Collection/collection-3-python-collections-digit-filter-Ayshyama" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DCI/Python/12-Lambda-Dictionaries/Exercise(Collection-Dictionary)/collection-4-python-collections-basics-2-Ayshyama" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DCI/Python/12-Lambda-Dictionaries/Exercise(Collection-HarryPotter)/collection-5-python-collections-harry-potter-Ayshyama" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DCI/Python/15-Regex/Exercises/Ex1-Regex1-Substasks/regex-1-python-texts-regex-1-Ayshyama" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DCI/Python/15-Regex/Exercises/Ex2-Regex-unzero/regex-2-python-text-regex-unzero-Ayshyama" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DCI/Python/17-Statements-Loops/Exercises/1-loops - for loop/loop-1-python-statements-and-loops-for_loop-Ayshyama" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DCI/Python/17-Statements-Loops/Exercises/2-loops-while-loop/loops-2-python-statements-and-loops-while_loop-Ayshyama" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DCI/Python/17-Statements-Loops/Exercises/3-loops-continue-and-break/loops-3-python-statements-and-loops-break_and_continue-Ayshyama" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DCI/Python/18-Functions/Exercises/1-func-parameters/functions-1-python-basics-functions-parameters-i-Ayshyama" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DCI/Python/19-Functions-Scope/Exercises/Variables, arguments and scope/functions-2-python-basics-functions-parameters-ii-Ayshyama" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DCI/Python/6-Text2/6-Py-Intro-day-Text-day-assigment-2/text-1-python-texts-basics-1-Ayshyama" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DCI/Python/6-Text2/6-Py-Intro-day-Text-day-assigment/intro-1-python-introduction-hello_world_and_comments-Ayshyama" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DCI/Python/7-Classes-OOP/7-PY-INTRO-CLASSES/date-1-python-datetime-creation-Ayshyama" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DCI/Python/8-Datetime-Timezone/8-PY-INTRO-DATES-TIMEZONE-EXERCISE/3-date-python-timezones-Ayshyama" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DCI/Python/8-Datetime-Timezone/date-2-python-datetime-manipulation-Ayshyama" vcs="Git" />
+  </component>
+</project>
