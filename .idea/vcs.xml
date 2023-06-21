@@ -19,5 +19,7 @@
     <mapping directory="$PROJECT_DIR$/DCI/Python/7-Classes-OOP/7-PY-INTRO-CLASSES/date-1-python-datetime-creation-Ayshyama" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/DCI/Python/8-Datetime-Timezone/8-PY-INTRO-DATES-TIMEZONE-EXERCISE/3-date-python-timezones-Ayshyama" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/DCI/Python/8-Datetime-Timezone/date-2-python-datetime-manipulation-Ayshyama" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DCI/Study-projects/Tic-tac-toe-Ovidiu" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DCI/Study-projects/tic_tac_toe" vcs="Git" />
   </component>
 </project>
