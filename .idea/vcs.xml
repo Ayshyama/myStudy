@@ -2,7 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/DCI/CodeWars/CodeWars_exercises" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/CodeWars/CodeWars_exercises" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/DCI/Python/10-Collection/collection-1-python-collections-basics-1-Ayshyama" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/DCI/Python/10-Collection/collection-2-python-collections-swap-Ayshyama" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/DCI/Python/10-Collection/collection-3-python-collections-digit-filter-Ayshyama" vcs="Git" />

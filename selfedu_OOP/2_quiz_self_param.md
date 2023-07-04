@@ -129,19 +129,20 @@ Sample Input:
 Python - the basics of craftsmanship
 512
 
-
 ## Feat 8. A class is declared in the program:
 
 ```py
 class String:
      is_empty = False
 ``` 
+
 And then two instances of it are created:
 
 ```py
 s1 = String()
 s2 = String()
 ```
+
 After that, the command is executed:
 
 ```py
@@ -150,13 +151,13 @@ s2.is_empty = True
 
 Select the correct statements related to this program
 (there are 4 right):
+
 - The last command will create a local property is_empty with a value of True on the s2 instance
 - The variable b = s2.is_empty will refer to the local attribute is_empty of the object s2
 - The variable a = s1.is_empty will refer to the is_empty attribute of the String class
 - The values s1.is_empty and s2.is_empty will be the same and set to True
 - The last command will change the is_empty attribute of the String class to True
 - Value s1.is_empty will still be False and s2.is_empty will be new True
-
 
 ## Feat 9. Rows of data are read from the input stream using the command:
 
@@ -182,7 +183,8 @@ class DataBase:
 
 add two methods. First method:
 
-insert(self, data) - to add new data to the end of the lst_data list from the passed list of data strings. In this case, each element in the lst_data list must be represented by a dictionary in the format:
+insert(self, data) - to add new data to the end of the lst_data list from the passed list of data strings. In this case,
+each element in the lst_data list must be represented by a dictionary in the format:
 
 {'id': 'number', 'name': 'name', 'old': 'age', 'salary': 'salary'}
 
@@ -190,13 +192,16 @@ For example, the string "1 Sergey 35 120000" should be converted to a dictionary
 
 {'id': '1', 'name': 'John', 'old': '35', 'salary': '120000'}
 
-and only after that it is added to the lst_data list. And so for all rows from the data list passed to the insert () method.
+and only after that it is added to the lst_data list. And so for all rows from the data list passed to the insert ()
+method.
 
 Second method:
 
-select(self, a, b) - to return a new list from the elements of the existing list lst_data in the index range [a; b] (inclusive) (not id, but list indexes). Keep in mind that the bound b may exceed the length of the list.
+select(self, a, b) - to return a new list from the elements of the existing list lst_data in the index range [a; b] (
+inclusive) (not id, but list indexes). Keep in mind that the bound b may exceed the length of the list.
 
-Note: In this problem, the number of elements per line (separated by a space) is always the same as the number of fields in the FIELDS collection.
+Note: In this problem, the number of elements per line (separated by a space) is always the same as the number of fields
+in the FIELDS collection.
 
 P.S. Your task is only to add two methods to the DataBase class.
 
@@ -227,7 +232,7 @@ db.insert(lst_in)
 ## Feat 10. A Translator class is given (for translating from English into German), in which three methods are declared:
 
 ```py
-class translator:
+class Translator:
      def add(self, eng, de):
          if 'tr' not in self.__dict__:
              self.tr = {}
@@ -241,20 +246,30 @@ class translator:
      def translate(self, eng):
          # continue the translate method here
 ```
-An object of this class should store links between English and German words locally (in the tr attribute) in the form of the following dictionary:
+
+An object of this class should store links between English and German words locally (in the tr attribute) in the form of
+the following dictionary:
+
 ```py
 {'<English word>': [<one or more German words>], ...}
 ```
 
 Methods should do the following:
 
-add(self, eng, de) - to add a new pair of English and German words to the dictionary (if the English word already exists, then the new German word is added as a synonym for the translation, for example, go - go, walk, go); if the link eng-de already exists, then you don't need to add it a second time, for example: add('go', 'go'), add('go', 'go');
-remove(self, eng) - to remove a link from the dictionary by the specified English word;
-translate(self, eng) - for translating from English into German (the method should return a list of German words corresponding to the translation of an English word, even if there is only one word in the list).
+- add(self, eng, de) - to add a new pair of English and German words to the dictionary (if the English word already
+  exists, then the new German word is added as a synonym for the translation, for example, go - go, walk, go); if the
+  link eng-de already exists, then you don't need to add it a second time, for example: add('go', 'go'), add('go', '
+  go');
+- remove(self, eng) - to remove a link from the dictionary by the specified English word;
+- translate(self, eng) - for translating from English into German (the method should return a list of German words
+  corresponding to the translation of an English word, even if there is only one word in the list).
 
-All additions and deletions of bindings must be performed within each specific object of the Translator class, i.e. bindings are stored locally inside instances of the Translator class using a dictionary collection. (There is no need to store bindings directly in the __dict__ collection!)
+All additions and deletions of bindings must be performed within each specific object of the Translator class, i.e.
+bindings are stored locally inside instances of the Translator class using a dictionary collection. (There is no need to
+store bindings directly in the `__dict__` collection!)
 
-Create an instance tr of the Translator class and call the add method on the following bindings:
+Create an instance `tr` of the `Translator` class and call the `add` method on the following bindings:
+
 ```
 tree - Baum
 car - Auto
@@ -266,7 +281,10 @@ go - fahren
 go - laufen
 milk - Milch
 ```
-Then, using the remove() method, remove the link for the English word car. Use the translate() method to translate the word go. Print the result on the screen as a string of all Russian words associated with the word go:
+
+Then, using the `remove()` method, remove the link for the English word `car`. Use the `translate()` method to translate
+the word `go`. Print the result on the screen as a string of all German words associated with the word `go`:
+
 ```py
 class translator:
      def add(self, eng, de):
@@ -285,3 +303,5 @@ class translator:
 
 # here create an object of class Translator
 ```
+
+Output in the format (for example word `go`): gehen fahren laufen
