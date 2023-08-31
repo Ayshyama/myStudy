@@ -1,22 +1,35 @@
+# Python program to demonstrate
+# command line arguments
+
+
 import getopt, sys
 
+# Remove 1st argument from the
+# list of command line arguments
+argumentList = sys.argv[1:]
 
-def main(argv):
-    try:
-        opts, args = getopt.getopt(argv, "ha:b:", ["help", "add="])
-    except getopt.GetoptError:
-        print('test.py -a <value1> -b <value2>')
-        sys.exit(2)
-    for opt, arg in opts:
-        if opt == '--help':
-            print('test.py -a <value1> -b <value2>')
-            sys.exit()
-        elif opt in ("-a", "--add"):
-            value1 = arg
-        elif opt in ("-b", "--add"):
-            value2 = arg
-    print(f"Sum: {int(value1) + int(value2)}")
+# Options
+options = "hmo:"
 
+# Long options
+long_options = ["Help", "My_file", "Output="]
 
-if __name__ == "__main__":
-    main(sys.argv[1:])
+try:
+    # Parsing argument
+    arguments, values = getopt.getopt(argumentList, options, long_options)
+
+    # checking each argument
+    for currentArgument, currentValue in arguments:
+
+        if currentArgument in ("-h", "--Help"):
+            print("Displaying Help")
+
+        elif currentArgument in ("-m", "--My_file"):
+            print("Displaying file_name:", sys.argv[0])
+
+        elif currentArgument in ("-o", "--Output"):
+            print(("Enabling special output mode (% s)") % (currentValue))
+
+except getopt.error as err:
+    # output error, and return with an error code
+    print(str(err))
