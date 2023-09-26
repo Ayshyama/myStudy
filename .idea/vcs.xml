@@ -26,8 +26,10 @@
     <mapping directory="$PROJECT_DIR$/DCI/Python/45-Libraries/exs/lib-1-modules-Ayshyama" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/DCI/Python/46-Command-Line-Interface/cli-args-Ayshyama" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/DCI/Python/47-GitHub/group-regex-Serg-f" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/DCI/Python/48-DataBases/Exercise-PostgreSQL/basic-usage-1-dbeaver-Ayshyama" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/DCI/Python/48-DataBases/Exercise-getrequest" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DCI/Python/49-DataBase-Exc/Exercise(adv. datatypers 2)/advanced-sql-2-datatype-2-Ayshyama" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DCI/Python/49-DataBase-Exc/Exercise(adv. datatypes)/advanced-sql-1-datatype-1-Ayshyama" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DCI/Python/49-DataBase-Exc/Exercise-PostgreSQL/basic-usage-1-dbeaver-Ayshyama" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DCI/Python/49-DataBase-Exc/Exercise-getrequest" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/DCI/Python/6-Text2/6-Py-Intro-day-Text-day-assigment-2/text-1-python-texts-basics-1-Ayshyama" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/DCI/Python/6-Text2/6-Py-Intro-day-Text-day-assigment/intro-1-python-introduction-hello_world_and_comments-Ayshyama" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/DCI/Python/7-Classes-OOP/7-PY-INTRO-CLASSES/date-1-python-datetime-creation-Ayshyama" vcs="Git" />

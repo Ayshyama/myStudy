@@ -4,10 +4,8 @@
             "previewLimit": 50,
             "server": "localhost",
             "port": 5432,
-            "askForPassword": true,
             "driver": "PostgreSQL",
-            "name": "TestConnection",
-            "group": "testing",
+            "name": "testing",
             "database": "music",
             "username": "postgres"
         }
