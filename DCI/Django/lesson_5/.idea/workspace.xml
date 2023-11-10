@@ -4,22 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="972a4622-9076-425c-9e2f-95ca8398e3bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/static/css/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/fetch_time.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/testapp/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/testapp/server_time.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testapp/templatetags/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testapp/templatetags/my_tags.py" afterDir="false" />
+    <list default="true" id="972a4622-9076-425c-9e2f-95ca8398e3bb" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/testapp/dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/users/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/users/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lesson_2/frameworks-orm-models-fields-private-Ayshyama" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson_2/frameworks-orm-models-fields-private-Ayshyama" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exc_temp_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/exc_temp_project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exc_temp_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/exc_temp_project/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/practice/practice_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/practice/practice_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/testapp/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/testapp/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/testapp/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/testapp/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/testapp/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/testapp/footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/testapp/home2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/testapp/home2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testapp/templatetags/my_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/testapp/templatetags/my_tags.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/testapp/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/testapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Html-css-js/helloworld-cube2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../selfedu_OOP/1_Class_and_objects.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../selfedu_OOP/1_Class_and_objects.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../selfedu_OOP/2_self_param.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../selfedu_OOP/2_self_param.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,10 +38,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -57,16 +63,22 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/user/Desktop/Projects/12_EDUAPP",
+    "last_opened_file_path": "C:/Users/user/Desktop/Projects/1_myStudy/DCI/Django/lesson_5",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -231,12 +243,39 @@
       <workItem from="1697011497521" duration="2840000" />
       <workItem from="1697015263881" duration="11343000" />
       <workItem from="1697099862102" duration="10263000" />
-      <workItem from="1697116089012" duration="1965000" />
+      <workItem from="1697116089012" duration="2753000" />
+      <workItem from="1697181580648" duration="4218000" />
+      <workItem from="1697201686411" duration="101000" />
+      <workItem from="1697202370510" duration="8117000" />
+      <workItem from="1697525063772" duration="258000" />
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1697119379967</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697119379967</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/lesson_5$Test__practice_tests_HomePageTests.coverage" NAME="Test: practice.tests.HomePageTests Coverage Results" MODIFIED="1697031443589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />

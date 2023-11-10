@@ -20,3 +20,8 @@ def current_time():
     cur_time = datetime.now()
     formatted_time = cur_time.strftime('%H:%M:%S')
     return formatted_time
+
+
+@register.filter
+def reverse(string):
+    return string[::-1]

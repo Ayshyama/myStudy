@@ -36,6 +36,16 @@
                         </li>
                         <li><a href="{% url 'practice' %}">Practice</a></li>
 
+                        {% if user.is_authenticated %}
+                            <li>Welcome, <span style="color: mediumvioletred">{{ user.username }}</span></li>
+                            <li><a href="{% url 'logout' %}">logout</a></li>
+                        {% else %}
+                            <li><a href="{% url 'login' %}">login</a></li>
+                            <li><a href="{% url 'register' %}">Register</a></li>
+                        {% endif %}
+
+
+
 
                     </ul>
 
